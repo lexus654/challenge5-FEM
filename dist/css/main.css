@@ -1,4 +1,40 @@
-body {
-  margin: 10px;
-  background-color: blue;
-  top: auto; }
+/* 1440px */
+@media only screen and (max-width: 1440px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; }
+  body {
+    width: 100%; }
+    body nav {
+      height: 100px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 170px; }
+      body nav .nav__rightpart,
+      body nav .nav__leftpart {
+        display: flex; }
+        body nav .nav__rightpart li,
+        body nav .nav__leftpart li {
+          list-style-type: none; }
+      body nav .nav__rightpart .nav__rightpart__logo,
+      body nav .nav__rightpart .nav__rightpart__tags {
+        font-family: "Kumbh Sans";
+        margin: 0 20px; }
+      body nav .nav__rightpart .nav__rightpart__tags {
+        position: relative;
+        top: 2px; }
+      body nav .nav__leftpart {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        body nav .nav__leftpart .nav__leftpart__account {
+          margin-left: 20px; }
+          body nav .nav__leftpart .nav__leftpart__account img {
+            height: 50px; }
+        body nav .nav__leftpart .nav__leftpart__cart {
+          margin-right: 20px; }
+          body nav .nav__leftpart .nav__leftpart__cart img {
+            height: 30px; } }
